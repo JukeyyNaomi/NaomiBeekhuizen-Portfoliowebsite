@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Naomi Beekhuizen Portfoliowebsite</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/main.css" rel="stylesheet" />
+		<link type="text/css" href="styles/layout.css" rel="stylesheet" />
+		<link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet"/>
+		 <script src="scripts/main.js" defer ></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            
+            $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+            window.location.hash = hash;
+            });
+            } 
+            });
+            });
+            
+            </script>
+		
+	</head>
+	<body>
+	  	<header class="grid-item header" id="header">
+	  	    <div class="headmenu" id="navbar">
+	  		   <img src="Icons/logonb.svg" id="logo"/>
+	  		   <div class="menutoggle" id="navbar-right">
+		      		<h1>&#9776;</h1>
+		      	</div>
+		    </div>
+		    <nav id="menu" class="inactive">
+	    	<!--  MENU TOGGLE ZICHTBAAR OP KLEIN DESKTOP. -->
+	    	  <ul>
+	    		<li><a href="#main" id="home">Home</a></li>
+	    		<li><a href="#whatido" >Wat ik doe</a></li>
+	    		<li><a href="#projecten" id="switchDesktop">Projecten</a></li>
+	    		<li><a href="#about" >Wie ben ik</a></li>
+	    		<li><a href="#contact" >Contact</a></li>
+	    		 
+	    	  </ul>
+	       </nav>
+	  	</header>
+	  	
+	    
+	    
+	    
+	    
+	    
+	    <!--  INTRODUCTIE  -->
+	    <main class="grid-item main mobile" id="main">
+	    	<h2>Naam:</h2>
+	    	<p>Naomi Jeanetta Maria Nicolle Michelle Beekhuizen</p>
+	    	<h2>Leeftijd:</h2>
+	    	<p>20 jaar</p>
+	    	<h2>Opleiding:</h2>
+	    	<p>Communication and Multimedia Design (2e jaar)</p>
+	    	<h2>Vakgebied</h2>
+	    	<p>Frontend development, UX-design en Interaction Design</p>
+	    </main>
+	    
+	    <main class="grid-item mainDesktop" id="main">
+	    	<div>
+	    	      <h2>Naam:</h2>
+	    	      <p>Naomi Jeanetta Maria Nicolle Michelle Beekhuizen</p>
+	    	      <h2>Leeftijd:</h2>
+	    	      <p>20 jaar</p>
+	    	      <h2>Opleiding:</h2>
+	    	      <p>Communication and Multimedia Design (2e jaar)</p>
+	    	      <h2>Vakgebied</h2>
+	    	      <p>Frontend development, UX-design en Interaction Design</p>
+	    	</div>
+	    	<img src="images/naomi.png"/>    
+	    </main>
+	
+	    
+	    
+	    
+	    
+	    
+	    
+	    <a name="whatidoo"></a>
+	     <!--  WAT IK DOE  -->
+	    <article class="grid-item whatido" id="whatido">
+	       
+	           <h2>Wat ik doe</h2>
+	           <div class="break"></div>
+	           <div class="cmd"><img src="Icons/md-person.svg"/><h3>Research</h3></div>
+	           <div class="cmd"><img src="Icons/md-tv.svg"/><h3>User-centered Design</h3></div>
+	           <div class="cmd"><img src="Icons/code.svg"/><h3>Testing and coding</h3></div>
+	           <p>Als interaction designer dien ik als intermediair tussen mens en machine. In deze digitale wereld is een goede communicatie tussen de twee essentieel. Tijdens mijn opleiding heb ik veel verschillende methoden geleerd om een zo goed mogelijke oplossing te ontwerpen voor de desbetreffende doelgroep. Hier heb ik de basis geleerd van UX-design, UI-design en frontend development, maar er valt altijd nog meer te leren en dat maakt het zo leuk!</p>
+	           
+	    </article>
+	    
+	    
+	    
+	    
+	    <!--  PROJECTEN OVERZICHT  -->
+	    <aside class="grid-item projecten" id="projecten">
+	    	<h2>Projecten</h2>
+
+            <!-- Flickity HTML init -->
+            <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }'>
+            
+            
+            <div class="gallery-cell"><a href="CMD.html"><img width="100%" height="100%" src="images/cmddenhaag.png"/></a></div>
+            
+            <div class="gallery-cell"><a href="kwartje.html"><img width="100%" height="100%" src="images/Brouwerijkwartje.png"/></a></div>
+            
+            <div class="gallery-cell"><a href="spacex.html"><img width="100%" height="100%" src="images/spacex2.png"/></a></div>
+            
+            <div class="gallery-cell"><a href="correct.html"><img width="100%" height="100%" src="images/Correct2.png"/></a></div>
+            
+            </div>
+
+	    </aside>
+	    
+	    
+	    <aside class="grid-item projectenDesktop" id="projectenDesktop">
+	       <h2>Projecten</h2>
+	       <div class="projects">
+	           <a href="CMD.html"><img src="images/cmddenhaag.png"/></a>
+	           <a href="kwartje.html"><img src="images/Brouwerijkwartje.png"/></a>
+	           <div class="break"></div>
+	           <a href="spacex.html"><img src="images/spacex2.png"/></a>
+	           <a href="correct.html"><img src="images/Correct2.png"/></a>
+	       </div>
+	    </aside>
+	    
+	    
+	    
+	    
+	    
+	    <!--  PROGRAMMA SKILLS OVERZICHT  -->
+	    <aside class="grid-item programmas" >
+	    	<div class="programs"><img src="Icons/photoshop.svg"/><p>Photoshop</p></div>
+	    	<div class="programs"><img src="Icons/illustrator.svg"/><p>Illustrator</p></div>
+	    	<div class="break"></div>
+	    	<div class="programs"><img src="Icons/indesign.svg"/><p>Indesign</p></div>
+	    	<div class="programs"><img src="Icons/premiere.svg"/><p>Premiere pro</p></div>
+	    	<div class="break"></div>
+	    	<div class="programs"><img src="Icons/xd.svg"/><p>Adobe XD</p></div>
+	    	<div class="programs"><img src="Icons/logo-javascript.svg"/><p>Javascript</p></div>
+	    	<div class="break"></div>
+	    	<div class="programs"><img src="Icons/logo-html5.svg"/><p>HTML5</p></div>
+	    	<div class="programs"><img src="Icons/logo-css3.svg"/><p>CSS3</p></div>
+	    	
+	    </aside>
+	    
+	   <!-- <aside class="grid-item programmasDesktop" >
+	    	<div class="programss"><img src="Icons/photoshop.svg"/><p>Photoshop</p></div>
+	    	<div class="programss"><img src="Icons/illustrator.svg"/><p>Illustrator</p></div>
+	    	<div class="programss"><img src="Icons/indesign.svg"/><p>Indesign</p></div>	   
+	    	<div class="programss"><img src="Icons/premiere.svg"/><p>Premiere pro</p></div>
+	    	
+	    	<div class="break"></div>
+	    	
+	    	<div class="programss"><img src="Icons/xd.svg"/><p>Adobe XD</p></div>
+	    	<div class="programss"><img src="Icons/logo-javascript.svg"/><p>Javascript</p></div>
+	    	<div class="programss"><img src="Icons/logo-html5.svg"/><p>HTML5</p></div>
+	    	<div class="programss"><img src="Icons/logo-css3.svg"/><p>CSS3</p></div>
+	    	
+	    </aside>
+	    -->
+	    
+	    
+	    
+	    
+	    
+	   <!--  ABOUT ME  --> 
+	   <section class="grid-item about" id="about"> 
+	       <h2>Wie ben ik?</h2>
+	       <p>Als beelddenker ben ik altijd al bezig geweest met het ontwikkelen van beelden in mijn hoofd, om deze vervolgens op papier of mijn computer uit te werken. Ik heb een scherp oog voor detail en ik ben gedreven om mijn opdrachten zo goed mogelijk af te maken. Ik heb altijd hard moeten werken om iets te kunnen bereiken wanneer mij onderschatte. Ik heb ze altijd hun ongelijk laten zien en mij gevochten door het VMBO en de HAVO. Ik houd van tekenen en illustreren en doe dit ook graag in opdracht voor andere mensen. Daarnaast ben ik ook voortdurend bezig met het ontwikkelen van nieuwe websites, mede in opdracht voor school. Ik vind het erg leuk om te doen en hoop hier ook mijn beroep van te kunnen maken.</p>
+	       <div class="waarden">
+	            <div class="kernwaarden"><img src="Icons/pencil-alt.svg"/><p>Creatief</p></div>
+	    	    <div class="kernwaarden"><img src="Icons/suitcase.svg"/><p>Leiderschap</p></div>
+	    	    <div class="kernwaarden"><img src="Icons/md-people.svg"/><p>Sociaal</p></div>
+	    	</div>
+	   </section>
+	   
+	   
+	   
+	   
+	    <!--  KERNWAARDEN  -->
+	    <!--<aside class="grid-item waarden">
+	    	<div class="kernwaarden"><img src="Icons/pencil-alt.svg"/><p>Creatief</p></div>
+	    	<div class="kernwaarden"><img src="Icons/suitcase.svg"/><p>Leiderschap</p></div>
+	    	<div class="kernwaarden"><img src="Icons/md-people.svg"/><p>Sociaal</p></div>	
+	    </aside>-->
+	    
+	    
+	    
+	    
+	    <!--  CONTACT  -->
+	    <section class="grid-item contact" id="contact">
+	       <h2>Contact</h2>
+	       <div class="contact-form">
+	           <form id="contact-form" method="post" action="contact-form-handler.php"/>
+	               <p>Naam:<br><input name="name" type="text" class="form-control" placeholder="Voornaam en achternaam"></p>
+	               <p>Emailadres:<br><input name="email " type="email" class="form-control" placeholder="Voorbeeld@email.com"></p>
+	               <p>Reden voor contact:<br><textarea name="message" class="form-control" placeholder="Type hier iets..." ></textarea></p>
+	           
+	               <input type="submit" class="form-control submit" value="Verstuur" >
+	           
+	       </div>
+	    </section>
+	    
+	    
+	    
+	    
+	    <!--  EMAIL EN TELEFOONNUMMER  -->
+	    
+	    <aside class="grid-item extra">
+	       <img src="Icons/ios-mail.svg"/><h3>Naomi.beekhuizen@gmail.com</h3>
+	       <div class="break"></div>
+	       <img src="Icons/ios-call.svg"/><h3>06 81146177</h3>
+	    </aside>
+	    
+	    
+	    
+	    
+	    
+	    
+	    <footer class="grid-item foot">
+            <a href="https://www.facebook.com/naomi.beekhuizen/" target="_blank"><img src="Icons/logo-facebook.svg"/></a>
+            <a href="https://www.instagram.com/_naomi.beekhuizen_/" target="_blank"><img src="Icons/logo-instagram.svg"/></a>
+            <a href="https://www.youtube.com/channel/UCeIPI-AT-t_ER2jJ9ESaVGw" target="_blank"><img src="Icons/logo-youtube.svg"/></a>
+            <a href="https://www.linkedin.com/in/naomi-beekhuizen-9161381b9/" target="_blank"><img src="Icons/linkedin-in.svg"/></a>
+	    </footer>
+            
+
+	 
+	</body>
+</html>

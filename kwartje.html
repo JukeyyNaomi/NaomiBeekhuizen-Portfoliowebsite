@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Naomi Beekhuizen Portfoliowebsite</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link type="text/css" href="styles/cmd.css" rel="stylesheet" />
+		<link type="text/css" href="styles/layout-projects.css" rel="stylesheet" />
+		 <script src="scripts/main.js" defer ></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+		 <link type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css" rel="stylesheet"/>
+		 
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+            
+            $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+            window.location.hash = hash;
+            });
+            } 
+            });
+            });
+            </script>
+	
+		
+	</head>
+	<body>
+	  	<header class="grid-item header" id="header">
+	  	    <div class="headmenu" id="navbar">
+	  		   <img src="Icons/logonb.svg" id="logo"/>
+	  		   <div class="menutoggle" id="navbar-right">
+		      		<h1>&#9776;</h1>
+		      	</div>
+		    </div>
+		    <div class="back">
+		          <a href="index.html">
+		          <img src="Icons/ios-arrow-back.svg"/>Terug
+	              </a>
+		    </div>
+		    <nav id="menu" class="inactive">
+		    
+	    	<!--  MENU TOGGLE ZICHTBAAR OP KLEIN DESKTOP. -->
+	    	<ul>
+	    		<li><a href="index.html" >Home</a></li>
+	    		<li><a href="index.html" >Wat ik doe</a></li>
+	    		<li><a href="index.html" >Projecten</a></li>
+	    		<li><a href="index.html" >Wie ben ik</a></li>
+	    		<li><a href="index.html" >Contact</a></li>
+	    		 
+	    	  </ul>
+	       </nav>
+	  	</header>
+	    
+	    
+	    <!--  INTRODUCTIE  -->
+	    <main class="grid-item main" id="boven">
+	        <div class="projectInfo">
+	           <h2>Brouwerij Kwartje</h2>
+	    	
+	    	  <p>In het voorjaar van 2020 heb ik de opdracht gekregen om een website te ontwerpen voor een kleine lokale brouwerij, Brouwerij Kwartje. Vanuit school hebben wij materiaal gekregen waarmee wij direct mee aan de slag konden. Ieder van ons kreeg een persona toegereikt die jouw doelgroep moest voorstellen. Ik kreeg de persona Pedro. Hij is eigenaar van zijn eigen bar Cerveza. Hij vindt kwaliteit erg belangrijk en is erg gepassioneerd over het vakgebied. Bij dit project heb ik gebruik gemaakt van verschillende methoden en het eindresultaat uitgetypt met HTML5 en CSS3. </p>
+	    	</div>
+	    	
+	    	<img src="images/Brouwerijkwartje.png"/>
+	    	
+	    </main>
+	    
+	    
+	    
+	    
+	    
+	     <!--  verschillende gebruikte methoden  -->
+	    <article class="grid-item methods" id="methods">
+	       <h2>Methoden</h2>
+	       <div class="break"></div>
+	       <div class="designMethod"><img src="Icons/sitemap.svg"/><br><p>Sitemap</p></div>
+	       <div class="designMethod"><img src="Icons/ios-code-working.svg"/><br><p>Coderen</p></div>
+	       <div class="designMethod"><img src="Icons/md-person.svg"/><br><p>Persona's</p></div>
+	       <div class="break"></div>
+	       <div class="designMethod"><img src="Icons/pencil-ruler.svg"/><br><p>Paper Prototype</p></div>
+	       <div class="designMethod"><img src="Icons/laptop.svg"/><br><p>Wireframes</p></div>
+	       <div class="designMethod"><img src="Icons/test.svg"/><br><p>User testing</p></div>
+	    
+	  
+	    </article>
+
+	    
+	    
+	    <!--  PROGRAMMA SKILLS OVERZICHT  -->
+	    <aside class="grid-item eindproduct" id="eindproduct">
+            <h2>Eindproduct</h2>
+            <img src="images/kwartje-laptop-specifiek.png"/>
+            <div> 
+                <img src="images/homeKwartje.png"/>
+                <img src="images/overonsKwartje.png"/>
+                <img src="images/webshopKwartje.png"/>
+            </div>
+            <a href="https://lucid-albattani-36100c.netlify.app/">Bekijk hier online!</a>
+	    </aside>
+
+	   
+
+	    
+	    
+	    
+	    
+	    <!--  TUSSENPRODUCTEN  -->
+	    <section class="grid-item tussenproduct" id="tussenproduct">
+	       <h2>Tussenproducten</h2>
+            
+            <div id="sitemap">
+                <h4>Sitemap</h4>
+                <div class="break"></div>
+                <img width="90%" src="images/sitemap-kwartje.png"/>
+            </div>
+            <div id="flowchart">
+                <h4>Flowchart</h4>
+                <div class="break"></div>
+                <img width="50%"src="images/Flowchart-kwartje.png"/>
+            </div>
+            <div id="wireframes">
+                <h4>Styleguide</h4>
+                <div class="break"></div>
+                <img width="90%" src="images/styletile-kwartje.png"/>
+            </div>
+<!--            <div id="storyboard">
+                <h4>Storyboards</h4>
+                <div class="gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell"><img width="100%" src="images/Manon-storyboard.png"/></div>
+                <div class="gallery-cell"><img width="100%" src="images/Mathijs-storyboard.png"/></div>
+                <div class="gallery-cell"><img width="100%" src="images/Melanie-storyboard.png"/></div>
+            </div>-->
+            <div class="empty"></div>
+            <div id="wireframes">
+                <h4>Wireframes</h4>
+                <div class="break"></div>
+                <img width="90%" src="images/cmddenhaag-wireframes.png"/>
+            </div>
+            
+	    </section>
+	    
+
+	    <aside class="grid-item goUp">
+	       <a href="#boven"><img src="Icons/ios-arrow-dropdown.svg"/></a>
+	    </aside>
+	    
+	    
+	    
+	 
+	    
+	    <footer class="grid-item foot">
+            <a href="https://www.facebook.com/naomi.beekhuizen/" target="_blank"><img src="Icons/logo-facebook.svg"/></a>
+            <a href="https://www.instagram.com/_naomi.beekhuizen_/" target="_blank"><img src="Icons/logo-instagram.svg"/></a>
+            <a href="https://www.youtube.com/channel/UCeIPI-AT-t_ER2jJ9ESaVGw" target="_blank"><img src="Icons/logo-youtube.svg"/></a>
+            <a href="https://www.linkedin.com/in/naomi-beekhuizen-9161381b9/" target="_blank"><img src="Icons/linkedin-in.svg"/></a>
+	    </footer>
+            
+
+	 
+	</body>
+</html>

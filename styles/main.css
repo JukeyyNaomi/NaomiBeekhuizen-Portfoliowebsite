@@ -1,0 +1,703 @@
+/* CSS VAN DE HOOFDPAGINA */
+
+/*html {
+    scroll-behavior: smooth;
+}*/
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #1f1f1f;
+	color: #FFFFFF;
+    font-family: avenir, arial;
+}
+
+@font-face {
+    font-family: 'silom';
+    src: url('../Icons/Silom.ttf');
+}
+
+p {
+    font-size: 0.8em;
+    text-align: justify;
+}
+
+
+h2, h3 {
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.1em;
+  border-radius: 0.2em;
+  font-family: silom, avenir;
+  /*border-bottom: 1px solid #2ba09f;*/
+
+}
+
+h2 {
+    border-bottom: 2px solid #2ba09f;
+    width: 40%;
+    margin-left: 2%;
+}
+
+.main, .ad1, .programmas, .foot, .about, .contact, .whatido{
+  padding: 0.2em 1em;
+}
+
+.header {
+    background-image: url('../images/mobile-banner2.png');
+    background-size: 800px 100%;
+    height: 20vh;
+}
+
+#menu {
+    background-color: #093B44;
+}
+.main {
+    background-image: url('../images/naomi-mobile.png');
+    background-size: 350px 100%;
+    background-position: 40vw 0vh;
+    background-repeat: no-repeat;
+    height: 45vh;
+} 
+
+.main p {
+    font-size: 1em;
+    text-align: left;
+}
+
+.whatido {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #093B44;
+}
+
+.whatido a {
+    display: none;
+}
+
+.cmd {
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    align-content: center;
+}
+
+.cmd h3 {
+    font-size: 0.7em;
+}
+
+.cmd img{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.cmd:nth-child(5) img {
+    padding-bottom: 1.5vh;
+}
+
+.cmd:nth-child(3) {
+    margin-left: 5vw;
+}
+
+.projecten {
+    background-color: #2ba09f;
+    height: 40vh;
+}
+
+.projecten h2 {
+    border-bottom: 2px solid #1f1f1f;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.about {
+    background-color: #093B44;
+    width: 100%;
+    /*height: 40vh;*/
+}
+
+.about h2{
+    border-bottom: 2px solid #2ba09f;
+}
+.about p {
+    width: 100%;
+}
+
+.waarden {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.kernwaarden {
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 2%;
+    background-color: #2ba09f;
+}
+
+.kernwaarden p {
+    text-align: center;
+}
+
+.kernwaarden img{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.kernwaarden p {
+    margin: 0;
+}
+
+.kernwaarden:nth-child(1) img{
+    padding: 8%;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.programmas {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.programmas p {
+    text-align: center;
+}
+
+.programs {
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 2%;
+}
+.programs img{
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.programs p {
+    margin: 0;
+}
+
+.programs:nth-child(1), .programs:nth-child(5), .programs:nth-child(7), .programs:nth-child(11) {
+    background-color: #2ba09f;
+}
+
+.programs:nth-child(2), .programs:nth-child(4), .programs:nth-child(8), .programs:nth-child(10) {
+    border: 2px solid #707070;
+}
+
+.programs:nth-child(8) img{
+    width: 50%;
+}
+.programs:nth-child(8) p{
+    padding-top: 7%;
+}
+
+.extra img{
+    width: 15vw;
+    margin-right: 2vw;
+    max-width: 50px;
+}
+
+.extra {
+    height: 30vh;
+    width: 100vw;
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    font-size: 70%;
+}
+
+.foot {
+    background-color: #2ba09f;
+    position: fixed;
+    bottom: 0;
+}
+
+footer {
+
+}
+
+
+/*---------------CAROUSEL MET PROJECTEN -----------------*/
+
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 300px;
+  height: 30vh;
+  padding-right: 15px;
+  padding-left: 15px;
+  background: #2ba09f;
+  /*counter-increment: gallery-cell;*/
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(gallery-cell);*/
+  color: white;
+}
+
+
+/*---------------- CONTACTFORMULIER -----------------------*/
+
+input, textarea {
+    float: center;
+    width: 80vw;
+    border-radius: 20px;
+    border: 0;
+    padding: 2% 2%;
+    height: 5vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+textarea {
+    height: 15vh;
+    font-family: avenir;
+}
+
+.contact {
+    height: 50vh;
+    float: center;
+}
+
+.contact-form {
+    padding-left: 5vw;
+}
+
+.contact p {
+    font-family: silom;
+    font-size: 0.7em;
+}
+
+.contact h2 {
+    border-bottom: 2px solid #2ba09f;
+    width: 40%;
+    font-size: 0.9em;
+}
+
+.submit {
+    width: 20vw;
+    height: 4vh;
+    font-size: 60%;
+    float: right;
+    background-color: #2ba09f;
+    font-family: silom;
+    margin-top: 0;
+}
+
+
+
+
+
+
+
+
+
+/*---------- IPAD SIZE -----------------*/
+
+@media only screen and (min-width: 481px){
+    * {
+        font-size: initial;
+    }
+     
+     p, h2, h3 {
+        font-size: 1.3em;
+    }
+    
+    .main h2, .projecten h2, .about h2, .contact h2 {
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
+    }
+    
+    .main p {
+        font-size: 1.3em;
+    }
+    
+    .header {
+        background-image: url('../images/mobile-banner2.png');
+        background-size: 800px 100%;
+        height: 20vh;
+        font-size: 1.5em;
+    }
+    
+    .main, .ad1, .programmas, .about, .contact, .whatido{
+         padding: 2em;
+    }
+    
+    .main {
+    background-size: 480px 100%;
+    background-position: 50vw 0vh;
+    background-repeat: no-repeat;
+    height: 60vh;
+    }
+    
+    .whatido .cmd h3 {
+        font-size: 0.8em;
+    }
+    
+    .cmd:nth-child(5) {
+        padding-top: 1.0vh;
+    }
+    
+    .projecten {
+        height: 50vh;
+    }
+    
+    
+    
+    
+    
+input, textarea {
+    width: 80vw;
+    height: 7vh;
+    }
+
+textarea {
+    height: 15vh;
+    font-family: avenir;
+}
+
+.contact {
+    height: 64vh;
+}
+
+.contact-form {
+    padding-left: 5vw;
+}
+
+.contact p {
+    font-family: silom;
+    font-size: 1em;
+}
+
+.submit {
+    width: 15vw;
+    height: 4vh;
+    font-size: 70%;
+    padding: 0;
+}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 769px){
+  
+    * {
+        font-size: initial;
+    }
+     
+     p, h2, h3 {
+        font-size: 1.3em;
+    }
+    
+    .main h2, .projecten h2, .about h2, .contact h2 {
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
+    }
+    
+    .main {
+    background-size: 480px 100%;
+    background-position: 60vw 0vh;
+    background-repeat: no-repeat;
+    height: 60vh;
+    }
+  
+    
+    
+    .projectenDesktop {
+    background-color: #2ba09f;
+}
+
+.projectenDesktop h2 {
+    border-bottom: 2px solid #1f1f1f;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.projects {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 2em;   
+}
+
+.projects a {
+    width: 600px;
+}
+
+.projects a img {
+    width: 90%;
+    padding: 2em;
+}
+
+
+
+
+
+
+
+/*.programmasDesktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.programss {
+    width: 20vw;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0;
+    padding: 2%;
+}
+.programss img{
+    width: 10vw;
+}
+
+
+.programss p {
+    margin: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+  .programss:nth-child(1), .programss:nth-child(3), .programss:nth-child(6), .programss:nth-child(8) {
+    background-color: #2ba09f;
+}
+
+.programss:nth-child(2), .programss:nth-child(4), .programss:nth-child(7), .programss:nth-child(9) {
+    border: 2px solid #707070;
+}
+
+.programss:nth-child(7) img{
+    width: 50%;
+}
+.programss:nth-child(7) p{
+    padding-top: 7%;
+}
+  
+}
+*/
+
+
+
+
+
+@media only screen and (min-width: 1201px){
+
+    /*.programmasDesktop*/
+    .programmas, .about, .contact, .whatido, .projectenDesktop{
+  padding: 5em;
+}
+
+    .header {
+    background-size: 2000px 220%;
+    background-position: 100% 100%;
+    height: 20vh;
+    }
+
+
+
+    .mainDesktop {
+        overflow: hidden;
+        height: 75vh;
+        max-height: 90vh;
+        
+    }
+
+    .mainDesktop p {
+    font-size: 1.3em;
+    text-align: left;
+
+    }
+   
+    
+      
+  .mainDesktop img {
+    width: 560px;
+    height: 100%;
+    
+    }
+    
+    
+  
+  .mainDesktop div{
+    float: left;
+    padding: 3em; 
+    padding-right: 0;
+    margin-right: 0;
+        margin-left: 5vw;
+  }
+  
+  .mainDesktop div h2 {
+    margin-bottom: 1em;
+    padding-bottom: 0.2em;
+    width: 25vw;
+    max-width: 300px;
+    font-size: 1.5em;
+  }
+
+  
+  .mainDesktop img {
+    float: right;
+  }
+  
+  
+  
+  
+
+  
+
+}
+
+
+@media only screen and (min-width: 1300px){
+* {
+        font-size: initial;
+    }
+     
+     h2, h3 {
+        font-size: 2em;
+    }
+    
+    .main h2, .projecten h2, .about h2, .contact h2, .whatido h2 {
+        font-size: 2em;
+        margin-bottom: 3em;
+    }
+    
+    
+    
+    .mainDesktop img {
+    width: 45%;
+    max-width: 600px;
+    height: 100%;
+    margin-right: auto;
+    
+    }
+    
+    .cmd img {
+        width: 10vw;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    
+    .whatido p{
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    .about p {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    
+    .kernwaarden img {
+        width: 10vw;
+    }
+    
+    
+    
+    
+    input, textarea {
+    width: 40vw;
+    height: 7vh;
+    }
+
+textarea {
+    height: 15vh;
+    font-family: avenir;
+}
+
+.contact {
+    height: 100vh;
+}
+
+.contact-form {
+    padding-left: 5vw;
+}
+
+.contact p {
+    font-family: silom;
+    font-size: 1em;
+}
+
+.submit {
+    width: 5vw;
+    height: 4vh;
+    font-size: 70%;
+    padding: 0;
+    margin-right: 45vw;
+}
+
+.extra {
+    float: left;
+}
+
+.programs {
+    width: 25vw;
+}
+
+.programs img {
+    width: 10vw;
+}
+
+.programs:nth-child(8) img {
+    width: 8vw;
+}
+    
+
+}
+

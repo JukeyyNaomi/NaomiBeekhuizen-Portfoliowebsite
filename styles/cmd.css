@@ -1,0 +1,389 @@
+/*  CSS PROJECT CMD-DEN HAAG  */
+
+
+
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #1f1f1f;
+	color: #FFFFFF;
+    font-family: avenir, arial;
+}
+
+@font-face {
+    font-family: 'silom';
+    src: url('../Icons/Silom.ttf');
+}
+
+p {
+    font-size: 0.8em;
+
+}
+
+a {
+    color: white;
+}
+
+
+h2, h3 {
+  font-size: 0.9em;
+  font-weight: normal;
+  padding: 0.1em;
+  border-radius: 0.2em;
+  font-family: silom, avenir;
+}
+
+h1 {
+    font-size: 1em;
+  font-weight: normal;
+  padding: 0.1em;
+  border-radius: 0.2em;
+  font-family: avenir;
+}
+
+h2 {
+    border-bottom: 2px solid #2ba09f;
+    width: 40%;
+    margin-left: 2%;
+}
+
+
+h4 {
+    text-align: center;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.main, .eindproduct, .foot, .about, .tussenproduct, .methods{
+  padding: 0.2em 1em;
+}
+
+
+
+
+
+.header {
+    background-image: url('../images/mobile-banner2.png');
+    background-size: 800px 100%;
+    height: 20vh;
+}
+
+
+#menu {
+    background-color: #093B44;
+}
+
+
+
+
+
+.main h2 {
+    text-align: center;
+    margin-left: 12vw;
+    font-size: 1.3em;
+    width: 70vw;
+}
+
+.main {
+    margin: 0;
+    margin-bottom: 1em;
+}
+
+.main p {
+    text-align: justify;
+}
+
+
+
+
+
+.methods {
+    background-color: #2ba09f;
+}
+
+.methods h2 {
+    border-bottom: 2px solid #1f1f1f;
+    width: 40%;
+
+}
+
+.methods {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.designMethod {
+    width: 27%;
+    text-align: center;
+    border-radius: 10px;
+    margin: 3%;
+    padding: 2%;
+}
+.designMethod img{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.designMethod p {
+    margin: 0;
+}
+.designMethod:nth-child(8) img{
+    width: 70%;
+}
+
+.designMethod:nth-child(8) p {
+    padding-top: 0.2vh;
+}
+
+
+
+
+
+
+.about {
+    background-color: #093B44;
+    width: 100%;
+    padding-bottom: 3vh;
+}
+
+.about h2{
+    border-bottom: 2px solid #2ba09f;
+    margin-bottom: 3vh;
+    margin-top: 2vh;
+
+}
+.about p {
+    width: 100%;
+}
+
+
+
+
+
+
+.eindproduct img {
+    width: 90vw;
+}
+
+.eindproduct div img{
+    width: 29vw;
+    padding: 1vh;
+    margin-left: 1vw;
+}
+
+.eindproduct div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+}
+
+.eindproduct h2 {
+    margin-bottom: 5vh;
+}
+
+.eindproduct {
+    margin-bottom: 3vh;
+}
+
+
+
+
+
+
+
+.tussenproduct h2{
+    border-bottom: 2px solid #2ba09f;
+}
+.empty {
+    height: 3vh;
+}
+
+
+.tussenproduct #wireframes img, .tussenproduct #navigatiemodel img, .tussenproduct #sitemap img {
+    margin-left: 5vw;
+}
+
+.tussenproduct #flowchart img {
+    margin-left: 23vw;
+}
+.tussenproduct #flowchart2 img {
+    margin-left: 5vw;
+}
+
+.tussenproduct #moodboard img {
+    margin-left: 5vw;
+}
+
+.tussenproduct {
+    margin-bottom: 5vh;
+}
+
+.goUp {
+    width: 10vw;
+    margin-bottom: 10vh;
+    margin-left: 45vw;
+}
+
+
+
+.foot {
+    background-color: #2ba09f;
+    position: fixed;
+    bottom: 0;
+}
+
+/*---------------CAROUSEL MET PROJECTEN -----------------*/
+
+
+.gallery-cell {
+  width: 350px;
+  height: 25vh;
+  padding-right: 20px;
+  padding-left: 20px;
+  /*counter-increment: gallery-cell;*/
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  /*content: counter(gallery-cell);*/
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+/*---------- IPAD SIZE -----------------*/
+
+@media only screen and (min-width: 481px){
+    * {
+        font-size: initial;
+    }
+     
+     h2, h3, h4 {
+        font-size: 1.3em;
+    }
+    
+    
+    
+    p {
+        font-size: 1.1em;
+    }
+    
+    about h2, .tussenproducten h2 {
+        font-size: 1.3em;
+        margin-bottom: 1.5em;
+    }
+    
+    .main, .eindproduct, .foot, .about, .tussenproduct, .methods{
+        padding: 0.7em 1.5em;
+}
+    
+    .header {
+        background-image: url('../images/mobile-banner2.png');
+        background-size: 800px 100%;
+        height: 20vh;
+        font-size: 1.5em;
+    }
+    
+   
+    
+    .main h2 {
+        font-size: 1.5em;
+        width: 70vw;
+}
+
+
+    
+    
+    
+    
+    
+    .gallery-cell {
+        width: 450px;
+        height: 40vh;
+        padding-right: 20px;
+        padding-left: 20px;
+}
+
+/* cell number */
+.gallery-cell:before {
+        display: block;
+        text-align: center;
+        color: white;
+}
+    
+}
+
+
+
+
+
+
+
+/*----------  KLEIN DESKTOP --------------*/
+
+@media only screen and (min-width: 769px){
+  
+}
+
+@media only screen and (min-width: 1300px){
+  
+.designMethod:nth-child(8) img{
+    width: 10vw;
+}
+
+.designMethod:nth-child(7) img {
+    width: 7vw;
+}
+
+.designMethod:nth-child(8) p {
+    padding-top: 0.2vh;
+}
+
+.about video {
+    width: 50%;
+    margin-left: 24vw;
+}
+
+
+
+ 
+    .gallery-cell {
+        width: 900px;
+        height: 70vh;
+        padding-right: 20px;
+        padding-left: 20px;
+}
+
+/* cell number */
+.gallery-cell:before {
+        display: block;
+        text-align: center;
+        color: white;
+}
+
+#logo img{
+    margin-left: 5vw;
+}
+
+}
